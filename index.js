@@ -1,4 +1,4 @@
-'use strict'
+/*'use strict'
 //Conexión con base de datos
 const MONGOOSE = require('mongoose');
 const APP = require('./app');
@@ -20,4 +20,17 @@ MONGOOSE.connect('mongodb://localhost:27017/appastra', {
     .catch((error) => {
         console.clear();
         console.log(error);
-    });
+    });*/
+
+
+const express = require('express')
+const app = express()
+const port = 8080
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
