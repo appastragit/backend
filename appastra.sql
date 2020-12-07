@@ -1,0 +1,3 @@
+DROP DATABASE appastra;
+CREATE DATABASE appastra;
+
